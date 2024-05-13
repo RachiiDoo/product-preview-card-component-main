@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.buy-btn {
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.buy-btn:hover {
+  background-color: hsl(158, 55%, 17%);
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+img {
+  width: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right {
+  width: 45%;
+  padding: 10px 20px;
+}
+
+.left {
+  width: 100%;
+}
+
+p {
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+button svg {
+  margin-right: 8px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+
+.firstP {
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+.seconnP {
+  font-weight: 700;
+  color: hsl(228, 12%, 48%);
+}
+
+.second-price {
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+@media (width <= 600px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .right {
+    width: 100%;
+  }
+
+  img {
+    content: url(image-product-mobile.jpg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .firstP {
+    padding: 0px;
+  }
+}
